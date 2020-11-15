@@ -1,12 +1,19 @@
 package 练习题;
-
+import java.util.Scanner;
 public class six
 {
 
     public static void main(String[] args)
     {
-        var fuck=new user("2020","666","50");
-        System.out.println("ID:{ "+fuck.getId()+"},password=["+fuck.getPassword()+"],email:"+fuck.getEmail());
+        Scanner input=new Scanner(System.in);
+        System.out.println("账户id：");
+        String n1=input.nextLine();
+        System.out.println("密码是：");
+        String n2=input.nextLine();
+        System.out.println("邮箱是：");
+        String n3=input.nextLine();
+        var fuck=new user(n1,n2,n3);
+        System.out.println("ID:{ "+fuck.getId()+" },password=[ "+fuck.getPassword()+" ],email:"+fuck.getEmail());
     }
 }
 class user
