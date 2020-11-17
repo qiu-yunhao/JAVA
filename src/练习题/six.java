@@ -12,41 +12,41 @@ public class six
         String n2=input.nextLine();
         System.out.println("邮箱是：");
         String n3=input.nextLine();
-        var fuck=new user(n1,n2,n3);
-        System.out.println("ID:{ "+fuck.getId()+" },password=[ "+fuck.getPassword()+" ],email:"+fuck.getEmail());
+        var fuck = new user(n1, n2);
+        System.out.println("ID:{ " + fuck.getId() + " },password=[ " + fuck.getPassword() + " ],email:" + fuck.getEmail());
     }
 }
-class user
-{
+class user {
     private String id;
     private String password;
     private String email;
-    public user(String i,String p,String e)
-    {
-        this.id=i;
-        this.password=p;
-        this.email=e;
+
+    public user(String i, String p, String e) {
+        this.id = i;
+        this.password = p;
+        this.email = e;
     }
-    public user(String i,String p)
-    {
-        this.id=i;
-        this.password=p;
+
+    public user(String i, String p) {
+        this.id = i;
+        this.password = p;
+        this.email = getId() + "@qq.com";
     }
 
     public String getId() {
         return id;
     }
-    public String getPassword()
-    {
+
+    public String getPassword() {
         return password;
     }
+
     public String getEmail()
     {
-        char f='@';
-        String g="qq.com";
+        String f="@qq.com";
         if(email==null)
-            return getId()+f+g;
+            return id+f;
         else
-            return email;
+        return email;
     }
 }
