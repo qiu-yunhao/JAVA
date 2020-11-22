@@ -1,4 +1,27 @@
 package 第3章.例题;
-
-public class thirdIseven {
+import java.util.*;
+public class thirdIseven
+{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("How many numbers do you want to draw ?");
+        int k=in.nextInt();
+        System.out.print("What the highest number do you want to draw ?");
+        int n=in.nextInt();
+        int [] numbers = new int[n];
+        for(int i=0;i<numbers.length;i++)
+            numbers[i]=i+1;
+        int [] result=new int[k];
+        for(int i=0;i<result.length;i++)
+        {
+            int r = (int) (Math.random() * n);
+            result[i]=numbers[r];
+            numbers[r]=numbers[n-1];
+            n--;
+        }
+        Arrays.sort(result);
+        System.out.println("Bet the following combination.It'll make you rich!");
+        for(int r:result)
+            System.out.println(r);
+    }
 }
