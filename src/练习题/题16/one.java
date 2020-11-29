@@ -1,4 +1,4 @@
-package 练习题;
+package 练习题.题16;
 import java.util.Scanner;
 public class one
 {

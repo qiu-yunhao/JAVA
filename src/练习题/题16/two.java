@@ -1,5 +1,5 @@
-package 练习题;
-import java.util.*;
+package 练习题.题16;
+
 public class two
 {
     public static void main(String[] args)

@@ -1,6 +1,4 @@
-package 练习题;
-
-import java.util.Scanner;
+package 练习题.题16;
 
 public class nine {
     public static void main(String[] args) {
