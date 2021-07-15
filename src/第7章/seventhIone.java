@@ -1,5 +1,7 @@
 package 第7章;
+
 import java.util.*;
+
 public class seventhIone {
     public static void main(String[] args) {
         try (var in = new Scanner(System.in)) {
@@ -8,6 +10,7 @@ public class seventhIone {
             factorial(n);
         }
     }
+
 
     public static int factorial(int n) {
         System.out.println("factorial(" + n + "):");
@@ -21,4 +24,5 @@ public class seventhIone {
         System.out.println("return " + r);
         return r;
     }
+
 }
